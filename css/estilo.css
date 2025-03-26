@@ -1,0 +1,101 @@
+/* Local */
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../font/Lato-Regular.ttf');
+    }
+  
+  body{
+      font-family: "MiFuente";
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1025%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1026%26quot%3b)'%3e%3c/rect%3e%3cpath d='M 0%2c30 C 57.6%2c79.4 172.8%2c264 288%2c277 C 403.2%2c290 460.8%2c116 576%2c95 C 691.2%2c74 748.8%2c172.8 864%2c172 C 979.2%2c171.2 1036.8%2c87.8 1152%2c91 C 1267.2%2c94.2 1382.4%2c168.6 1440%2c188L1440 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c340 C 96%2c356.4 288%2c421.6 480%2c422 C 672%2c422.4 768%2c316.4 960%2c342 C 1152%2c367.6 1344%2c508.4 1440%2c550L1440 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1025'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1026'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(29%2c 52%2c 82%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+      width: 100%;
+      height: 100%;
+      background-repeat:repeat;  
+    }
+  
+    .container {  
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner Banner"
+        "Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu"
+        "Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Barra Barra"
+        "Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Barra Barra"
+        "Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Barra Barra"
+        "Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Barra Barra"
+        "Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Contenido Barra Barra"
+        "footer footer footer footer footer footer footer footer footer footer footer"
+        "footer footer footer footer footer footer footer footer footer footer footer";
+    }
+    
+    .Banner { 
+      grid-area: Banner; 
+      text-align: center; 
+      border: 1px solid gray;
+      border-radius: 1rem;
+      background-color: whitesmoke;
+    }
+    
+    .Menu { 
+      grid-area: Menu; 
+      margin-top: 0.5rem;
+      height: 3rem; 
+    }
+    
+    .Contenido { 
+      background-color: whitesmoke;
+      padding: 0.3rem;
+      grid-area: Contenido; 
+      font-size: 1.3rem;
+  }
+    
+    .Barra { 
+      margin-left: 0.5rem;
+      float: left;
+      grid-area: Barra; 
+      background-color: whitesmoke;
+    }
+    
+    .topnav {
+      background-color: #7C343C;
+      overflow: hidden;
+      }
+      .topnav a {
+      font-family: 'Lucida Sans';
+      float: left;
+      color: #D3CAA1;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      .topnav a:hover {
+      background-color: #F5EEAC;
+      color: black;
+      }
+      .topnav a.active {
+      background-color: #ffd60a;
+      color: #000814;
+      }
+      #titulo {
+        font-weight: bold;
+        font-size: 3rem;
+        }
+  
+    #wd{
+     float: left;
+     margin: 1rem;
+    }
+  
+    #footer{
+      background-color: #7C343C;
+      color: #D3CAA1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      grid-area: footer;
+    }
